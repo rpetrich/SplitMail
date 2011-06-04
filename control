@@ -2,7 +2,7 @@ Package: com.rpetrich.splitmail
 Priority: optional
 Section: Tweaks
 Architecture: iphoneos-arm
-Version: 0.1
+Version: 0.2
 Description: Split-style iPad mail app in portrait
 Name: SplitMail
 Depends: firmware (>= 3.2), mobilesubstrate, gsc.ipad | gsc.wildcat
