@@ -1,5 +1,4 @@
 #import <UIKit/UIKit.h>
-#import <CaptainHook/CaptainHook.h>
 
 %hook MasterDetailViewController
 
