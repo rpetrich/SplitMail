@@ -1,4 +1,5 @@
 #import <UIKit/UIKit.h>
+#import <CaptainHook/CaptainHook.h>
 
 @interface SlidableMasterSplitViewController : UISplitViewController
 @end
@@ -36,6 +37,19 @@
 		[result addObject:item];
 	}
 	return result;
+}
+
+%end
+
+%hook SlidableMasterSplitViewController
+
+- (void)viewDidLoad
+{
+	%orig;
+	// Fix right pane becoming unselectable on iOS5.0
+	UIView **_tapView = CHIvarRef(self, _tapView, UIView *);
+	if (_tapView)
+		(*_tapView).userInteractionEnabled = NO;
 }
 
 %end
