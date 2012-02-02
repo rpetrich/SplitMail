@@ -1,5 +1,5 @@
 TWEAK_NAME = SplitMail
-SplitMail_FILES = Tweak.xm
+SplitMail_FILES = Tweak.x
 SplitMail_FRAMEWORKS = UIKit QuartzCore
 
 include framework/makefiles/common.mk
