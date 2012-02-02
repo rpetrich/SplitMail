@@ -1,5 +1,12 @@
 #import <UIKit/UIKit.h>
 
+@interface SlidableMasterSplitViewController : UISplitViewController
+@end
+
+@interface MasterDetailViewController : SlidableMasterSplitViewController
+- (void)setHidesMasterViewInPortrait:(BOOL)newValue;
+@end
+
 %hook MasterDetailViewController
 
 - (void)loadView
